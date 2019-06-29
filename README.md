@@ -19,7 +19,7 @@ For any project, it is important to have a logo that represents our vision and o
 * Bikram Gangwar
 * Terence Leung
 
-And we are very proud to say that we are a team from HKUST, Clear Water Bay - Engineering School where we have just completed a 'Big Data Engineering' program.
+And we are very proud to say that we are a team from HKUST, Clear Water Bay - Engineering School where we have just completed our 'Big Data Technology' program.
 
 ## Getting Started
 
