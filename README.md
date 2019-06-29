@@ -8,6 +8,12 @@ FinHack WIP
 
 **WIP**
 
+# Logo
+Here's our logo (hover to see the title text):
+
+Inline-style: 
+![alt text](https://github.com/tyleung/finhack/blob/master/Files/img_logo_mycf.png "MyCF Logo")
+
 ## Getting Started
 
 ### Prerequisites
@@ -53,9 +59,9 @@ Those are passionate about saving the environment
 Tutorial / splash screen when you start the app: 
 <br/>
 ![alt text](https://cdn1.imggmi.com/uploads/2019/6/29/a1d12322cc1a9c344fde698c4e4dbbbb-full.jpg) <br/>
-Goals available: 
+New
 <br/>
-![alt text](https://i.ibb.co/QJ9nvxS/Screen-Shot-2019-03-30-at-15-54-21.png) <br/>
+![alt text](https://github.com/tyleung/finhack/blob/master/Files/img_cf_all.jpg) <br/>
 
 ## Product Canvas
 MyCF (My Carbon Footprint) is an app built for HongKong’ese to measure their carbon footprint without the need of any physical hardware. Our app is built over a simple premise that when shopping, every responsible citizen can play a big role in reducing HongKong’s carbon footprint by simply scanning their shopping bills and generating a carbon footprint based on our AI capabilities. 
@@ -142,6 +148,29 @@ https://marvelapp.com/478f0id
 - Hosting
 - Technology stack (system architecture) <br/>
 ![alt text](https://i.ibb.co/Bc7S8SN/System-Architecture.png)
+
+## Technical Considerations
+
+* Feature List
+- Core
+-- Scanned Receipts to OCR (English)
+-- Carbon Footprint Generator
+-- Immediate Score Generator
+-- Targeted Ads
+-- Message from co-founders (environment, privacy, data protection etc.)
+-- Survey to understand the end-user, their habits, shopping behaviour, and total spend per week and month along with their dietary consumption (meat etc.) (LINK)
+
+- Advanced
+-- Scanned Receipts to OCR (Chinese - Cantonese)
+-- Community Comparison (Mei Foo vs. Kowloon Tong vs. Ma On Shan etc.)
+-- Combine electricity and water carbon Footprint (like DEWA example)
+-- Show list of responsible merchants (Google, Apple, etc.)
+-- Suggest alternatives for shopping (beef vs. soy)
+
+- Experimental Features
+-- Conveyor Belt scan items
+-- Tailored Fun Facts within App (Curiously, texting creates less CO2 than a voice call; 1 kg of cheese generate the same amount of CO2 as a car travelling for 6 km) related to your shopping cart
+
 
 # References
 - https://finhack.io/
