@@ -9,6 +9,11 @@ Thank you for giving us the opportunity to present our project on Green Finance 
 # MyCF (My Carbon Footprint)
 MyCF (My Carbon Footprint) is a mobile app built for HongKong’ese to measure their carbon footprint without the need of any physical hardware. Our app is built over a simple premise that when shopping, every responsible citizen can play a big role in reducing HongKong’s carbon footprint by simply scanning their shopping bills and generating a carbon footprint based on our AI capabilities. The users can also get rewarded in the process with 'whitepoints', cash rewards etc.
 
+# Mission Statement
+A research from University of HK's Earth Science Department found that the excessive appetite for __meat__ is the main culprit to our high greenhouse gas emission (GHE) per capita. The results of the study show that if citizens adopt the governmental nutrient guidelines on meat consumption, we can achieve a __43%__ reduction in greenhouse gas emissions. Thus, simply by adopting a healthier diet, the population can actually have a very important role in reducing greenhouse gas emission to the level required to reach the __Paris agreement objective__. The goal of the HK Govt. is to reduce the number from 6.2 (last recorded and assessed in 2014) to 4.5 by 2020 to meet these international objectives.
+
+As tomorrow's citizens, we would like to help achieve this goal through our little venture. I hope you can all support us with this so we can bring the power of collaboration to all the young minds in Hong Kong and bring about a revolution to reduce carbon footprint.
+
 # Our Logo
 For any project, it is important to have a logo that represents our vision and our project's mission. Here's our logo that encapsulates our goal with this app. By cutting down on grocery and buying alternative (recommended) items as part of your shopping, you can save a ton of carbon footprint by yourself. This contribution is what reflects through our logo with earthy colors.
 
@@ -19,7 +24,7 @@ For any project, it is important to have a logo that represents our vision and o
 * Bikram Gangwar
 * Terence Leung
 
-And we are very proud to say that we are a team from HKUST, Clear Water Bay - Engineering School where we have just completed our 'Big Data Technology' program.
+And we are very proud to say that we are a team from HKUST, Clear Water Bay - Engineering School where we have just completed a 'Big Data Engineering' program.
 
 ## Getting Started
 
@@ -57,7 +62,6 @@ A carbon footprint is the total greenhouse gas (GHG) emissions caused directly a
 # Target Audience
 
 Age Groups and their preferences (based on our research about the Hong Kong market):
-
 •	23 – 33
 Smartphone savvy millenials who have an environment conscience.
 
@@ -157,7 +161,7 @@ With an idea and app today, there are bound to be direct and indirect competitor
 # Mockup (rapid prototype on Sketch)
 - https://github.com/tyleung/finhack/blob/master/Files/MyCF.sketch
 
-![alt text](https://github.com/tyleung/finhack/blob/master/Files/iphone_mockup.png) <br/>
+![alt text](https://github.com/tyleung/finhack/blob/master/Files/iphone_mockup.png =450x904)) <br/>
 
 # Technology Architecture 
 - AWS / Azure Hosting (at the moment, we are running this on our local machines)
