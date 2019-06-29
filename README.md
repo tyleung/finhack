@@ -55,10 +55,7 @@ Those are passionate about saving the environment
 
 
 ## Screenshots
-Tutorial / splash screen when you start the app: 
-<br/>
-![alt text](https://cdn1.imggmi.com/uploads/2019/6/29/a1d12322cc1a9c344fde698c4e4dbbbb-full.jpg) <br/>
-New
+Tutorial / Splash screen when you start the MyCF app: 
 <br/>
 ![alt text](https://github.com/tyleung/finhack/blob/master/Files/img_cf_all.jpg) <br/>
 
@@ -142,9 +139,9 @@ Failure to generate revenue due to lack of adoption from end-users.
 https://marvelapp.com/478f0id
 
 # Technology Architecture 
-- Hosting
+- AWS / Azure Hosting
 - Technology stack (system architecture) <br/>
-![alt text](https://i.ibb.co/Bc7S8SN/System-Architecture.png)
+![alt text](https://github.com/tyleung/finhack/blob/master/Files/Architecture_MyCF.png)
 
 ## Technical Considerations
 
