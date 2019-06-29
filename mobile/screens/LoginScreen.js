@@ -5,11 +5,14 @@ import {
   TouchableOpacity,
   Text,
   Image,
-  ImageBackground,
-  Platform
+  ImageBackground
 } from 'react-native';
 import InputField from '../components/InputField';
 import LoginButton from '../components/LoginButton';
+import Button from '../components/Button';
+
+const companyLogo = require('../images/logo.png');
+
 import { Dimensions } from 'react-native';
 const { height, width } = Dimensions.get('window');
 export const w = percent => (width * percent) / 100;
@@ -17,7 +20,7 @@ export const h = percent => (height * percent) / 100;
 export const totalSize = num =>
   (Math.sqrt(height * height + width * width) * num) / 100;
 
-export default class SignUpScreen extends Component {
+export default class LoginScreen extends Component {
   state = {
     isEmailCorrect: false,
     isPasswordCorrect: false,
@@ -25,7 +28,22 @@ export default class SignUpScreen extends Component {
   };
 
   getStarted = () => {
-    this.props.navigation.navigate('AddPayment');
+    const email = this.email.getInputValue();
+    const password = this.password.getInputValue();
+
+    this.setState(
+      {
+        isEmailCorrect: email === '',
+        isPasswordCorrect: password === ''
+      },
+      () => {
+        if (email !== '' && password !== '') {
+          this.props.navigation.navigate('Main');
+        } else {
+          console.warn('Fill up all fields');
+        }
+      }
+    );
   };
 
   changeInputFocus = name => () => {
@@ -48,14 +66,10 @@ export default class SignUpScreen extends Component {
         style={{ width: '100%', height: '100%' }}
       >
         <View style={styles.container}>
-          <Text style={styles.header}>Sign Up</Text>
-          <InputField
-            placeholder="Name"
-            keyboardType="default"
-            style={styles.email}
-            focus={this.changeInputFocus}
-            ref={ref => (this.name = ref)}
-            vectorIcon={'account-circle'}
+          <Image
+            style={styles.icon}
+            resizeMode="contain"
+            source={companyLogo}
           />
           <InputField
             placeholder="Email"
@@ -67,34 +81,38 @@ export default class SignUpScreen extends Component {
             vectorIcon={'email'}
           />
           <InputField
-            placeholder="Mobile"
-            keyboardType="number-pad"
-            style={styles.email}
-            focus={this.changeInputFocus}
-            ref={ref => (this.mobile = ref)}
-            vectorIcon={'cellphone'}
-          />
-          <InputField
             placeholder="Password"
+            returnKeyType="done"
             secureTextEntry={true}
-            style={styles.email}
             blurOnSubmit={true}
             error={this.state.isPasswordCorrect}
             ref={ref => (this.password = ref)}
             focus={this.changeInputFocus}
             vectorIcon={'onepassword'}
           />
-          <InputField
-            placeholder="Retype Password"
-            returnKeyType="done"
-            secureTextEntry={true}
-            blurOnSubmit={true}
-            error={this.state.isPasswordCorrect}
-            ref={ref => (this.password2 = ref)}
-            focus={this.changeInputFocus}
-            vectorIcon={'onepassword'}
-          />
           <LoginButton click={this.getStarted} isLogin={this.state.isLogin} />
+          <TouchableOpacity
+            onPress={() => navigate('About')}
+            activeOpacity={0.6}
+          >
+            <Text style={styles.about}>More Information</Text>
+          </TouchableOpacity>
+          <View style={styles.textContainer}>
+            <TouchableOpacity
+              onPress={() => navigate('SignUp')}
+              style={styles.touchable}
+              activeOpacity={0.6}
+            >
+              <Text style={styles.createAccount}>Create Account</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              // onPress={navigate('forgot')}
+              style={styles.touchable}
+              activeOpacity={0.6}
+            >
+              <Text style={styles.forgotPassword}>Forgot Password</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </ImageBackground>
     );
@@ -104,14 +122,7 @@ export default class SignUpScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  header: {
-    color: '#ff8fa0',
-    fontSize: totalSize(4),
-    marginBottom: h(3),
-    fontWeight: '600'
+    alignItems: 'center'
   },
   icon: {
     width: w(70),
@@ -122,7 +133,7 @@ const styles = StyleSheet.create({
   textContainer: {
     width: w(100),
     flexDirection: 'row',
-    marginTop: h(5)
+    marginTop: h(4)
   },
   email: {
     marginBottom: h(4.5)
@@ -138,6 +149,13 @@ const styles = StyleSheet.create({
   },
   forgotPassword: {
     color: '#ffffff',
+    textAlign: 'center',
+    fontSize: totalSize(2),
+    fontWeight: '600'
+  },
+  about: {
+    marginTop: h(1),
+    color: '#f8f8f8',
     textAlign: 'center',
     fontSize: totalSize(2),
     fontWeight: '600'

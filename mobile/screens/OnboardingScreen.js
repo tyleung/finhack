@@ -33,7 +33,7 @@ export default class OnboardingScreen extends React.Component {
         ]}
         showNext={false}
         showSkip={false}
-        onDone={() => navigate('SignUp')}
+        onDone={() => navigate('Login')}
       />
     );
   }

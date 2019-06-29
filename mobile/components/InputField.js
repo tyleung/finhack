@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Dimensions, StyleSheet, View, Image, TextInput } from 'react-native';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+import Colors from '../constants/Colors';
 const { height, width } = Dimensions.get('window');
 export const w = percent => (width * percent) / 100;
 export const h = percent => (height * percent) / 100;
@@ -24,7 +26,21 @@ export default class InputField extends Component {
           this.props.error ? styles.containerError : {}
         ]}
       >
-        <Image style={styles.icon} source={this.props.icon} />
+        {this.props.icon && (
+          <Image style={styles.icon} source={this.props.icon} />
+        )}
+        {this.props.vectorIcon && (
+          <MaterialCommunityIcons
+            name={this.props.vectorIcon}
+            size={26}
+            style={styles.icon}
+            color={
+              this.props.focused
+                ? Colors.tabIconSelected
+                : Colors.tabIconDefault
+            }
+          />
+        )}
         <TextInput
           style={styles.inputText}
           value={this.state.text}

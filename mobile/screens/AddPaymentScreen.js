@@ -9,7 +9,17 @@ import {
   Platform
 } from 'react-native';
 import InputField from '../components/InputField';
-import LoginButton from '../components/LoginButton';
+import Button from '../components/Button';
+import {
+  Container,
+  Header,
+  Content,
+  ListItem,
+  Radio,
+  Right,
+  Left
+} from 'native-base';
+
 import { Dimensions } from 'react-native';
 const { height, width } = Dimensions.get('window');
 export const w = percent => (width * percent) / 100;
@@ -17,7 +27,7 @@ export const h = percent => (height * percent) / 100;
 export const totalSize = num =>
   (Math.sqrt(height * height + width * width) * num) / 100;
 
-export default class SignUpScreen extends Component {
+export default class AddPaymentScreen extends Component {
   state = {
     isEmailCorrect: false,
     isPasswordCorrect: false,
@@ -25,7 +35,22 @@ export default class SignUpScreen extends Component {
   };
 
   getStarted = () => {
-    this.props.navigation.navigate('AddPayment');
+    const email = this.email.getInputValue();
+    const password = this.password.getInputValue();
+
+    this.setState(
+      {
+        isEmailCorrect: email === '',
+        isPasswordCorrect: password === ''
+      },
+      () => {
+        if (email !== '' && password !== '') {
+          this.props.navigation.navigate('Main');
+        } else {
+          console.warn('Fill up all fields');
+        }
+      }
+    );
   };
 
   changeInputFocus = name => () => {
@@ -48,9 +73,19 @@ export default class SignUpScreen extends Component {
         style={{ width: '100%', height: '100%' }}
       >
         <View style={styles.container}>
-          <Text style={styles.header}>Sign Up</Text>
+          <Text style={styles.header}>Add Payment Method</Text>
+          <View style={styles.radioGroup}>
+            <Left>
+              <Radio selected={true} />
+              <Text>Credit/Debit Card</Text>
+            </Left>
+            <Right>
+              <Radio selected={false} />
+              <Text>E-Wallet</Text>
+            </Right>
+          </View>
           <InputField
-            placeholder="Name"
+            placeholder="Cardholder's Name"
             keyboardType="default"
             style={styles.email}
             focus={this.changeInputFocus}
@@ -58,8 +93,8 @@ export default class SignUpScreen extends Component {
             vectorIcon={'account-circle'}
           />
           <InputField
-            placeholder="Email"
-            keyboardType="email-address"
+            placeholder="Card Number"
+            keyboardType="number-pad"
             style={styles.email}
             error={this.state.isEmailCorrect}
             focus={this.changeInputFocus}
@@ -75,8 +110,9 @@ export default class SignUpScreen extends Component {
             vectorIcon={'cellphone'}
           />
           <InputField
-            placeholder="Password"
+            placeholder="CVV Number"
             secureTextEntry={true}
+            returnKeyType="done"
             style={styles.email}
             blurOnSubmit={true}
             error={this.state.isPasswordCorrect}
@@ -84,17 +120,11 @@ export default class SignUpScreen extends Component {
             focus={this.changeInputFocus}
             vectorIcon={'onepassword'}
           />
-          <InputField
-            placeholder="Retype Password"
-            returnKeyType="done"
-            secureTextEntry={true}
-            blurOnSubmit={true}
-            error={this.state.isPasswordCorrect}
-            ref={ref => (this.password2 = ref)}
-            focus={this.changeInputFocus}
-            vectorIcon={'onepassword'}
+          <Button
+            click={this.getStarted}
+            isLogin={this.state.isLogin}
+            text={'Add'}
           />
-          <LoginButton click={this.getStarted} isLogin={this.state.isLogin} />
         </View>
       </ImageBackground>
     );
@@ -110,7 +140,6 @@ const styles = StyleSheet.create({
   header: {
     color: '#ff8fa0',
     fontSize: totalSize(4),
-    marginBottom: h(3),
     fontWeight: '600'
   },
   icon: {
@@ -136,10 +165,10 @@ const styles = StyleSheet.create({
     fontSize: totalSize(2),
     fontWeight: '600'
   },
-  forgotPassword: {
-    color: '#ffffff',
-    textAlign: 'center',
-    fontSize: totalSize(2),
-    fontWeight: '600'
+  radioGroup: {
+    flex: 1,
+    flexDirection: 'row',
+    paddingLeft: w(5),
+    paddingRight: w(5)
   }
 });
