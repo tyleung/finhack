@@ -9,9 +9,8 @@ FinHack WIP
 **WIP**
 
 # Logo
-Here's our logo (hover to see the title text):
+Here's our logo that encapsulates our goal with this app. By cutting down on grocery and buying alternative (recommended) items as part of your shopping, you can save a ton of carbon footprint by yourself. This contribution is what reflects through our logo with earthy colors.
 
-Inline-style: 
 ![alt text](https://github.com/tyleung/finhack/blob/master/Files/img_logo_mycf.png "MyCF Logo")
 
 ## Getting Started
@@ -128,7 +127,6 @@ Failure to generate revenue due to lack of adoption from end-users.
 -- Sell data (anonymized) to manufacturers
 - Targeted ads with recommendations of alternative products (those products that are heavily vetted by our compliance teams)
 
-
 ## Motivation to End-users and other stakeholders
 - Whitepoints (that can be converted into discounts, coupons, good conduct certificates etc.)
 - Rewards (through payment providers like AliPay, PayMe, WeChat Pay etc.)
@@ -139,7 +137,6 @@ Failure to generate revenue due to lack of adoption from end-users.
 - Channel testing
 - Development
 - Cloud Hosting Costs (AWS)
-
 
 # Mockup (rapid prototype)
 https://marvelapp.com/478f0id
@@ -170,7 +167,6 @@ https://marvelapp.com/478f0id
 - Experimental Features
 -- Conveyor Belt scan items
 -- Tailored Fun Facts within App (Curiously, texting creates less CO2 than a voice call; 1 kg of cheese generate the same amount of CO2 as a car travelling for 6 km) related to your shopping cart
-
 
 # References
 - https://finhack.io/
