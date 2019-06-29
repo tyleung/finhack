@@ -7,11 +7,15 @@ import { Platform, StatusBar } from 'react-native';
 import TabBarIcon from '../components/TabBarIcon';
 import RankScreen from '../screens/RankScreen';
 import ScanScreen from '../screens/ScanScreen';
+import DemoReceiptScreen from '../screens/DemoReceiptScreen';
+import DemoReceiptOCRScreen from '../screens/DemoReceiptOCRScreen';
 import WalletScreen from '../screens/WalletScreen';
 
 const ScanStack = createStackNavigator(
   {
-    Scan: ScanScreen
+    Scan: ScanScreen,
+    DemoReceipt: DemoReceiptScreen,
+    DemoReceiptOCR: DemoReceiptOCRScreen
   },
   {
     headerMode: 'none'

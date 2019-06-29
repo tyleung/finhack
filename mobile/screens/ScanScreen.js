@@ -35,6 +35,11 @@ class ScanScreen extends React.Component {
     }
   };
 
+  snapdemo = () => {
+    const { navigate } = this.props.navigation;
+    navigate('DemoReceipt');
+  };
+
   render() {
     const { hasCameraPermission } = this.state;
     if (hasCameraPermission === null) {
@@ -63,6 +68,18 @@ class ScanScreen extends React.Component {
                     this.snap();
                   }}
                   title="Capture"
+                />
+              </View>
+              <View
+                style={{
+                  margin: 20
+                }}
+              >
+                <Button
+                  onPress={() => {
+                    this.snapdemo();
+                  }}
+                  title="Use demo receipt"
                 />
               </View>
             </Camera>
