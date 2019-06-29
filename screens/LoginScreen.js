@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import InputField from '../components/InputField';
 import LoginButton from '../components/LoginButton';
+import Button from '../components/Button';
 
 const companyLogo = require('../images/logo.png');
 
@@ -90,6 +91,12 @@ export default class LoginScreen extends Component {
             vectorIcon={'onepassword'}
           />
           <LoginButton click={this.getStarted} isLogin={this.state.isLogin} />
+          <TouchableOpacity
+            onPress={() => navigate('About')}
+            activeOpacity={0.6}
+          >
+            <Text style={styles.about}>More Information</Text>
+          </TouchableOpacity>
           <View style={styles.textContainer}>
             <TouchableOpacity
               onPress={() => navigate('SignUp')}
@@ -126,7 +133,7 @@ const styles = StyleSheet.create({
   textContainer: {
     width: w(100),
     flexDirection: 'row',
-    marginTop: h(5)
+    marginTop: h(4)
   },
   email: {
     marginBottom: h(4.5)
@@ -142,6 +149,13 @@ const styles = StyleSheet.create({
   },
   forgotPassword: {
     color: '#ffffff',
+    textAlign: 'center',
+    fontSize: totalSize(2),
+    fontWeight: '600'
+  },
+  about: {
+    marginTop: h(1),
+    color: '#f8f8f8',
     textAlign: 'center',
     fontSize: totalSize(2),
     fontWeight: '600'

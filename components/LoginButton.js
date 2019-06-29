@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     paddingVertical: w(2),
     backgroundColor: '#888',
     borderRadius: w(10),
-    marginTop: h(8)
+    marginTop: h(4)
   },
   text: {
     color: 'white',

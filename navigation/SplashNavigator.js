@@ -4,6 +4,7 @@ import OnboardingScreen from '../screens/OnboardingScreen';
 import LoginScreen from '../screens/LoginScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 import AddPaymentScreen from '../screens/AddPaymentScreen';
+import AboutScreen from '../screens/AboutScreen';
 
 export default createStackNavigator(
   {
@@ -12,7 +13,8 @@ export default createStackNavigator(
     Onboarding: { screen: OnboardingScreen },
     Login: { screen: LoginScreen },
     SignUp: { screen: SignUpScreen },
-    AddPayment: { screen: AddPaymentScreen }
+    AddPayment: { screen: AddPaymentScreen },
+    About: { screen: AboutScreen }
   },
   {
     headerMode: 'none'
