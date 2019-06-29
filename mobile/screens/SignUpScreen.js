@@ -39,7 +39,7 @@ export default class SignUpScreen extends Component {
       },
       () => {
         if (email !== '' && password !== '') {
-          this.loginToFireBase(email, password);
+          this.props.navigation.navigate('Main');
         } else {
           console.warn('Fill up all fields');
         }
@@ -56,14 +56,6 @@ export default class SignUpScreen extends Component {
         isPasswordCorrect: this.password.getInputValue() === ''
       });
     }
-  };
-
-  loginToFireBase = (email, password) => {
-    this.setState({ isLogin: true });
-    Firebase.userLogin(email, password).then(user => {
-      if (user) this.props.success(user);
-      this.setState({ isLogin: false });
-    });
   };
 
   render() {

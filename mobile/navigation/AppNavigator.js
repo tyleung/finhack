@@ -1,18 +1,13 @@
 import React from 'react';
-import { createAppContainer, createStackNavigator } from 'react-navigation';
-import OnboardingScreen from '../screens/OnboardingScreen';
-import SignUpScreen from '../screens/SignUpScreen';
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
+import SplashNavigator from './SplashNavigator';
+import MainTabNavigator from './MainTabNavigator';
 
 export default createAppContainer(
-  createStackNavigator(
-    {
-      // You could add another route here for authentication.
-      // Read more at https://reactnavigation.org/docs/en/auth-flow.html
-      Onboarding: { screen: OnboardingScreen },
-      SignUp: { screen: SignUpScreen }
-    },
-    {
-      headerMode: 'none'
-    }
-  )
+  createSwitchNavigator({
+    // You could add another route here for authentication.
+    // Read more at https://reactnavigation.org/docs/en/auth-flow.html
+    //Splash: SplashNavigator,
+    Main: MainTabNavigator
+  })
 );
