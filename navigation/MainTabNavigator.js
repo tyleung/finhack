@@ -38,7 +38,7 @@ const WalletStack = createStackNavigator(
 );
 
 WalletStack.navigationOptions = {
-  tabBarLabel: 'Wallet',
+  tabBarLabel: 'Home',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}

@@ -10,9 +10,7 @@ import {
 import InputField from '../components/InputField';
 import LoginButton from '../components/LoginButton';
 
-const companyLogo = require('../images/PepeHands.png');
-const email = require('../images/PepeHands.png');
-const password = require('../images/PepeHands.png');
+const companyLogo = require('../images/logo.png');
 
 import { Dimensions } from 'react-native';
 const { height, width } = Dimensions.get('window');
