@@ -57,6 +57,7 @@ A carbon footprint is the total greenhouse gas (GHG) emissions caused directly a
 # Target Audience
 
 Age Groups and their preferences (based on our research about the Hong Kong market):
+
 •	23 – 33
 Smartphone savvy millenials who have an environment conscience.
 
