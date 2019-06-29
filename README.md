@@ -87,7 +87,7 @@ Our solution is technology based with the front-end being an app that can be eas
 - Environment conscience app - Cuts consumption levels
 - Gamification based on user generated data (peer pressure through social media)
 - Inclusive (anyone with a smartphone that has a camera function)
-- Scalable (AWS environment with Elastic Beanstalk)
+- Scalable (AWS environment with Elastic Beanstalk) - This gives us an immense advantage when scaling the application.
 - Proprietary algorithms to match item on shopping list with a direct carbon footprint number
 - Generates data related to habits for environment improving reasons
 
@@ -133,23 +133,30 @@ With an idea and app today, there are bound to be direct and indirect competitor
 - Targeted ads with recommendations of alternative products (those products that are heavily vetted by our compliance teams)
 - Partnership with Payment providers such as credit card companies (issuers), wallet companies (Google Pay, Apple Pay, Samusung Pay, AliPayHK, WeChat Pay etc.)
 
-
 ## Motivation to End-users and other stakeholders
 - Whitepoints (that can be converted into discounts, coupons, good conduct certificates etc.)
 - Rewards (through payment providers like AliPay, PayMe, WeChat Pay etc.)
 - Gamified Experience (leaderboards etc.)
+
+# Getting our first 100 users
+- During the Alpha and Beta launches, 
+- Just like our challenge yesterday to get the fastest LinkedIn invite, we are going to throw a challenge to the user who gets the first ten installs. We have 150 people in the room - This would give us an approximate 50 users initially :)
+- Force our friends to download the app and make them feel guilty of their own spending habits
+- Launch the app via beta-program at HKUST University so this can reach a wider audience. HKUST just launched a hyper airpollution / AQI measuring app called PRAISE HK via the sustainability programs who is in partnership with WHO 
 
 ## Costs Structure
 - Design and Testing
 - Channel testing
 - Development
 - Cloud Hosting Costs (AWS)
+- Initial social media marketing
+- Operational Costs
+- Salaries (to feed us developers) :pig_nose: :cow:
 
 # Mockup (rapid prototype on Sketch)
 - https://github.com/tyleung/finhack/blob/master/Files/MyCF.sketch
 
 ![alt text](https://github.com/tyleung/finhack/blob/master/Files/iphone_mockup.png) <br/>
-
 
 # Technology Architecture 
 - AWS / Azure Hosting (at the moment, we are running this on our local machines)
