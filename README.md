@@ -32,6 +32,7 @@ And we are very proud to say that we are a team from HKUST, Clear Water Bay - En
 
 What things you need to install the software and how to install them
 
+#### Backend
 ```
 import json
 import os
@@ -42,16 +43,37 @@ import flask
 import flask_bootstrap
 ```
 
+#### Mobile
+```
+npm install -g expo-cli
+```
+Download the client:   
+https://docs.expo.io/versions/latest/introduction/installation/  
+
 ### Installing
+
+#### Backend
 Most of the libraries will be installed automatically with Anaconda. Flask needs to be installed separately by the following:
 ```
 pip install flask
 pip install flask_bootstrap
 ```
 
+#### Backend
+```
+yarn
+```
+
 ## To Run
+
+#### Backend
 ```
 python MyCF.py
+```
+
+#### Mobile
+```
+yarn start
 ```
 
 ## Product Canvas
