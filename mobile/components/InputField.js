@@ -8,7 +8,7 @@ export const h = percent => (height * percent) / 100;
 export const totalSize = num =>
   (Math.sqrt(height * height + width * width) * num) / 100;
 
-const close = require('../images/PepeHands.png');
+const close = require('../images/close.png');
 
 export default class InputField extends Component {
   state = {

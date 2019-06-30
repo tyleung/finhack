@@ -13,7 +13,7 @@ export default class AboutScreen extends React.Component {
             backgroundColor: '#52bf90',
             image: (
               <Image
-                source={require('../images/about1.jpeg')}
+                source={require('../images/about1.png')}
                 resizeMode={'contain'}
                 style={{ height: 500 }}
               />
@@ -25,7 +25,7 @@ export default class AboutScreen extends React.Component {
             backgroundColor: '#52bf90',
             image: (
               <Image
-                source={require('../images/about2.jpeg')}
+                source={require('../images/about2.png')}
                 resizeMode={'contain'}
                 style={{ height: 500 }}
               />
@@ -37,7 +37,7 @@ export default class AboutScreen extends React.Component {
             backgroundColor: '#52bf90',
             image: (
               <Image
-                source={require('../images/about3.jpeg')}
+                source={require('../images/about3.png')}
                 resizeMode={'contain'}
                 style={{ height: 500 }}
               />
@@ -49,7 +49,7 @@ export default class AboutScreen extends React.Component {
             backgroundColor: '#52bf90',
             image: (
               <Image
-                source={require('../images/about4.jpeg')}
+                source={require('../images/about4.png')}
                 resizeMode={'contain'}
                 style={{ height: 500 }}
               />
