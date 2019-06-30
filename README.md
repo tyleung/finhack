@@ -161,7 +161,7 @@ With an idea and app today, there are bound to be direct and indirect competitor
 # Mockup (rapid prototype on Sketch)
 - https://github.com/tyleung/finhack/blob/master/Files/MyCF.sketch
 
-![alt text](https://github.com/tyleung/finhack/blob/master/Files/iphone_mockup.png =450x904)) <br/>
+![alt text](https://github.com/tyleung/finhack/blob/master/Files/iphone_mockup.png =450x904) <br/>
 
 # Technology Architecture 
 - AWS / Azure Hosting (at the moment, we are running this on our local machines)
